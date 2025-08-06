@@ -17,4 +17,6 @@ app.get("/", (req, res) => {
 
 // Routes
 import paperRoutes from "./routes/paper.routes.js";
+import quizRoutes from "./routes/quiz.routes.js";
 app.use("/api/v1/paper", paperRoutes);
+app.use("/api/v1/quiz", quizRoutes);
