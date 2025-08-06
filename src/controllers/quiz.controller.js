@@ -90,7 +90,7 @@ const GenerateQuiz = AsyncHandler(async (req, res) => {
       .json(new ApiResponse(500, null, "Failed to generate quiz."));
   }
   const parsed = parseGeminiQuizResponse(responseText);
-  console.log(parsed);
+ 
   const savedQuiz = await Quiz.create({
     class: selectedClass,
     subject,
